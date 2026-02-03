@@ -1,21 +1,24 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body {
+.contenedor-general {
     background: green;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.card {
+.carta{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
     width: 350px;
     height: 500px;
-    margin: 3%;
+    margin: auto;    
     border-radius: 3%;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -35,4 +38,12 @@ body {
 
 .icon-superior {
     font-size: 80px;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.btn-aplicar{
+    display: flex;
+    justify-content: center;
 }

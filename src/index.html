@@ -13,14 +13,26 @@
 </head>
 
 <body>
-  <div id="card" class="card">
-    <h3 id="icon-superior" class="icon-superior">♣</h3>
-    <h1 id="num" class="num">1</h1>
-    <h3 id="icon-inferior" class="icon-inferior">♣</h3>
+  <div class="contenedor-general">
+    <div id="card" class="carta">
+      <h3 id="icon-superior" class="icon-superior">♣</h3>
+      <h1 id="num" class="num">1</h1>
+      <h3 id="icon-inferior" class="icon-inferior">♣</h3>
+    </div>
+    <div class="btn">
+      <button id="btn-change" type="button"><strong> Change Card </strong></button>
+    </div>
+    <form action="" class="sizes" id="sizes">
+      <label for="width"></label>
+      <input type="number" name="width" id="width-card" placeholder="Ancho">
+      <label for="heigth">--</label>
+      <input type="number" name="heigth" id="heigth-card" placeholder="Alto">
+    </form>
+    <div class="btn-aplicar">
+      <button id="btn-a" type="button">Aplicar</button>
+    </div>
   </div>
-  <div class="btn">
-    <button id="btn-change" type="button">Change Card</button>
-  </div>
+
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
