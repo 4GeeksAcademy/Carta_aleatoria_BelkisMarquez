@@ -30,10 +30,9 @@ let generarCarta = () => {
 let CambioTamanio = () => {
   let widthCard = document.getElementById("width-card").value;
   let heigthCard = document.getElementById("heigth-card").value;
-  console.log(widthCard);
-  console.log(heigthCard);
-  cardTwist.style.width = widthCard+ "px"
-  cardTwist.style.height = heigthCard + "px"
+
+  cardTwist.style.width = widthCard + "%"
+  cardTwist.style.height = heigthCard + "%"
 }
 
 window.onload = function () {
@@ -47,18 +46,10 @@ window.onload = function () {
 
   let btnSize = document.getElementById("btn-a");
   btnSize.onclick = () => {
-    console.log('llamada de boton')
     CambioTamanio()
   }
-  
+
   setInterval(() => {
-    generarCarta()},10000);
-  
-
-
-
-
-
-
-
+    generarCarta()
+  }, 10000);
 };
